@@ -37,6 +37,43 @@ graph TD
 ```
 
 ## 2. Mixture of Experts (MOE) - Solve by named experts
+
+```mermaid
+graph TD
+    A[Patient 🏥] --> B{MoE Model for Care Delivery 🧠}
+    B --> C[General Practitioner 👨‍⚕️]
+    B --> D[Specialist 🔬]
+    B --> E[Nurse 👩‍⚕️]
+    B --> F[Care Coordinator 📋]
+    B --> G[Therapist 🗣️]
+    
+    H[Electronic Health Records 📑] --> B
+    I[Patient Surveys 📝] --> B
+    J[Clinical Guidelines 📘] --> B
+    
+    C --> K{Patient Clustering 🗃️}
+    D --> K
+    E --> K
+    F --> K
+    G --> K
+    
+    K --> L[Chronic Disease Management 🩺]
+    K --> M[Acute Care 🚑]
+    K --> N[Preventive Care 🍎]
+    K --> O[Mental Health 🧠]
+    K --> P[End-of-Life Care 🕊️]
+    
+    L --> Q{Personalized Care Plans 🎯}
+    M --> Q
+    N --> Q
+    O --> Q
+    P --> Q
+    
+    Q --> R[Improved Patient Outcomes 📈]
+    Q --> S[Reduced Healthcare Costs 💰]
+    Q --> T[Enhanced Patient Experience 😊]
+```
+
 ## 3. SRSB - Self reward score battles
 ## 4. MMFM - Memory model feedback maker
 
