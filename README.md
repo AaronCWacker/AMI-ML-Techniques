@@ -8,7 +8,10 @@ AMI - Advanced Machine Intelligence
 ## 3. SRSB - Self reward score battles
 ## 4. MMFM - Memory model feedback maker
 
-
+# Mermaid Prompt:
+```python
+Create a Mermaid Model which creates a diagram and model with short descriptions of common entities and method steps drawn from the papers and summary below for Multi-agent Systems (MAS):
+```
 
 # 1. Multi-agent Systems (MAS)
 
