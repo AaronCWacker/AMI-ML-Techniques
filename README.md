@@ -4,6 +4,38 @@ AMI - Advanced Machine Intelligence
 
 # Mermaid Models of MAS, MOE, SRSB, MMFM
 ## 1. Multi-agent Systems (MAS) - Solve by swarm of agents
+```mermaid
+graph TD
+    A[Multi-Agent System] --> B(Agents)
+    A --> C(Environment)
+    A --> D(Interaction)
+    A --> E(Coordination)
+    A --> F(Decentralization)
+    
+    B --> G(Autonomous decision making)
+    B --> H(Local information)
+    B --> I(Individual goals)
+    B --> J(Learning)
+    
+    E --> K(Communication)
+    E --> L(Collaboration)
+    E --> M(Task allocation)
+    E --> N(Synchronization)
+    
+    J --> O(Reinforcement learning)
+    J --> P(Iterative learning)
+    
+    Q(Applications) --> R(Robotics)
+    Q --> S(Distributed optimization)
+    Q --> T(Video processing)
+    Q --> U(Retail management)
+    Q --> V(Epidemiology modeling) 
+    
+    W(Modeling Approaches) --> X(Markov chains)
+    W --> Y(Temporal logic)
+    W --> Z(Ordinary differential equations)
+```
+
 ## 2. Mixture of Experts (MOE) - Solve by named experts
 ## 3. SRSB - Self reward score battles
 ## 4. MMFM - Memory model feedback maker
