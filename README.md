@@ -75,7 +75,143 @@ graph TD
 ```
 
 ## 3. SRSB - Self reward score battles
+
+```mermaid
+graph TD
+    S1[Healthcare Questions ❓] --> A1(AI Agent 1 🤖)
+    S1 --> A2(AI Agent 2 🤖) 
+    S1 --> E(Human Expert 🩺👨‍⚕️)
+    
+    A1 --> R1(Response 1)
+    A2 --> R2(Response 2)
+    E --> R3(Expert Response)
+
+    R1 --> SC1{Score 1 🎯}
+    R2 --> SC2{Score 2 🎯}
+    R3 --> SC3{Expert Score 🏅}
+
+    SC1 --> B{Battle 🥊}
+    SC2 --> B
+    SC3 --> B
+    B --> W{Winner 🏆}
+
+    W --> U{{Update Agents}}
+    U -.->|Improve| A1
+    U -.->|Improve| A2
+
+    subgraph Legend
+    L1[📊 Papers]
+    L2[💡 Ideas]
+    L3[🔄 Iterate]
+    end
+```
+
+```mermaid
+graph TD
+    S1[Healthcare Questions ❓] --> A1(GPT-4 🤖)
+    S1 --> A2(GPT-3.5 Turbo 🤖) 
+    S1 --> A3(Claude-3 Opus 🤖)
+    S1 --> A4(Gemini 🤖)
+    S1 --> A5(Mistral 🤖)
+    S1 --> A6(Mistral MoE 🤖)
+    S1 --> A7(Whisper 🤖)
+    S1 --> A8(Canary 🤖)
+    S1 --> A9(NLTK 🤖)
+    S1 --> A10(Scikit-Learn 🤖)
+    S1 --> A11(DocLM 🤖)
+    S1 --> E(Human Expert 🩺👨‍⚕️)
+    
+    A1 --> R1(Response 1)
+    A2 --> R2(Response 2)
+    A3 --> R3(Response 3)
+    A4 --> R4(Response 4)
+    A5 --> R5(Response 5)
+    A6 --> R6(Response 6)
+    A7 --> R7(Response 7)
+    A8 --> R8(Response 8)
+    A9 --> R9(Response 9)
+    A10 --> R10(Response 10)
+    A11 --> R11(Response 11)
+    E --> R12(Expert Response)
+
+    R1 --> SC1{Score 1-10 🎯}
+    R2 --> SC2{Score 1-10 🎯}
+    R3 --> SC3{Score 1-10 🎯}
+    R4 --> SC4{Score 1-10 🎯}
+    R5 --> SC5{Score 1-10 🎯}
+    R6 --> SC6{Score 1-10 🎯}
+    R7 --> SC7{Score 1-10 🎯}
+    R8 --> SC8{Score 1-10 🎯}
+    R9 --> SC9{Score 1-10 🎯}
+    R10 --> SC10{Score 1-10 🎯}
+    R11 --> SC11{Score 1-10 🎯}
+    R12 --> SC12{Expert Score 🏅}
+
+    SC1 --> B{Battle 🥊}
+    SC2 --> B
+    SC3 --> B
+    SC4 --> B
+    SC5 --> B
+    SC6 --> B
+    SC7 --> B
+    SC8 --> B
+    SC9 --> B
+    SC10 --> B
+    SC11 --> B
+    SC12 --> B
+    B --> W{Winners 🏆}
+
+    W --> U{{Enhance Winners}}
+    U -.->|Improve| A1
+    U -.->|Improve| A2
+    U -.->|Improve| A3
+    U -.->|Improve| A4
+    U -.->|Improve| A5
+    U -.->|Improve| A6
+    U -.->|Improve| A7
+    U -.->|Improve| A8
+    U -.->|Improve| A9
+    U -.->|Improve| A10
+    U -.->|Improve| A11
+
+    subgraph Legend
+    L1[📊 Papers]
+    L2[💡 Ideas]
+    L3[🔄 Iterate]
+    end
+```
+
 ## 4. MMFM - Memory model feedback maker
+```mermaid
+
+graph TD
+A[Healthcare Questions ❓] --> B{Memory Model Feedback Maker 🧠}
+B --> C[Episodic Memory 📆] 
+B --> D[Semantic Memory 📚]
+C --> E[Knowledge of Time ⏰]
+C --> F[Knowledge of Events 🎉] 
+C --> G[Knowledge of Emotions 😊😡]
+D --> H[Facts 📋]
+E --> I{Comparison Engine ⚖️}
+F --> I
+G --> I
+H --> I
+I --> J{Performance Evaluation 📊}
+J --> K{Iterative Improvement Loop 🔄}
+K --> B
+L[Healthcare Answers 💡] --> M[Markdown Files 📝]
+M --> N[Code Listings 💻]
+M --> O[Tables 🗓️]
+M --> P[Outlines 📑]
+I --> L
+
+```
+
+# Mermaid Example Detail Prompt:
+
+Create a mermaid diagram model that shows how to use Memory model feedback maker to evaluate performance and improve by comparison for Health Care scenarios by representing questions and answers used in care delivery organizations comparing output of by saving episodic memory which ccontains knowledge of time, events, and emotions, and semantic memory which contains facts.  Memory format is represented as markdown files with multiple modalities including code listings, tables, and outlines.  Use the papers attached for entities and relationships which should be represented as emoji labeled entities and shapes with relationship arrows.
+
+
 
 # Mermaid Prompt:
 ```python
